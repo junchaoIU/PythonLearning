@@ -100,6 +100,9 @@ OpenCV识别答题卡: https://gitee.com/52itstyle/Python/blob/master/Day12/
 
 生成识别二维码: https://gitee.com/52itstyle/Python/blob/master/Day13/
 
+### Day14
+
+我爬了《流浪地球》十万个短评得出以下结论: https://gitee.com/52itstyle/Python/blob/master/Day14/
 
 ## 欢迎关注
 
