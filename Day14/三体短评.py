@@ -1,3 +1,5 @@
+__author__ = "小柒"
+__blog__ = "https://blog.52itstyle.vip/"
 import os
 # 导入requests库
 import requests

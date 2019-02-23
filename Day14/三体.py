@@ -1,3 +1,5 @@
+__author__ = "小柒"
+__blog__ = "https://blog.52itstyle.vip/"
 import jieba
 import os
 
@@ -14,7 +16,7 @@ for word in words:
 items = list(counts.items())  # 将键值对转换成列表
 items.sort(key=lambda x: x[1], reverse=True)  # 根据词语出现的次数进行从大到小排序
 
-for i in range(11, 50):
+for i in range(0, 10):
     word, count = items[i]
     print("{0:<5}{1:>5}".format(word, count))
 
