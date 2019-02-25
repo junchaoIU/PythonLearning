@@ -10,7 +10,8 @@ from bs4 import BeautifulSoup
 
 # 给请求指定一个请求头来模拟chrome浏览器
 global headers
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36',
+           'cookie': 'network→www.douban.com→headers查看cookie'}
 # 好评500条，中评500条，差评500条
 # https://movie.douban.com/subject/26266893/comments?start=0&limit=20&sort=new_score&status=P&percent_type=h
 # https://movie.douban.com/subject/26266893/comments?start=0&limit=20&sort=new_score&status=P&percent_type=m
@@ -20,7 +21,8 @@ server = 'https://movie.douban.com/subject/26266893/comments'
 global save_path
 save_path = os.getcwd()+"\\Text\\"+'短评_好评.txt'
 global page_max
-page_max = 25  # 500 条微评论，后面就看不到了，不知道是否豆瓣有意而为之给隐藏了。
+# 好评 499*20=9980
+page_max = 499  # 500 短评论，后面就看不到了，不知道是否豆瓣有意而为之给隐藏了,哈哈哈原来是没登录导致的。
 global comments
 comments = ''
 

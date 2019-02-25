@@ -3,7 +3,7 @@ __blog__ = "https://blog.52itstyle.vip/"
 import jieba
 import os
 
-txt = open(os.getcwd()+"\\Text\\"+"短评_中评.txt", "r", encoding='utf-8').read()
+txt = open(os.getcwd()+"\\Text\\"+"短评_好评.txt", "r", encoding='utf-8').read()
 words = jieba.lcut(txt)  # 使用精确模式对文本进行分词
 counts = {}  # 通过键值对的形式存储词语及其出现的次数
 
