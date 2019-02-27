@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # import 进openCV的库
 import cv2
+import os
 
 
 # 调用电脑摄像头或者保存好的视频检测人脸并截图
-
 def CatchPICFromVideo(window_name, camera_idx, catch_pic_num, path_name):
     cv2.namedWindow(window_name)
 
@@ -12,7 +12,7 @@ def CatchPICFromVideo(window_name, camera_idx, catch_pic_num, path_name):
     cap = cv2.VideoCapture(camera_idx)
 
     # 告诉OpenCV使用人脸识别分类器
-    classfier = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
+    classfier = cv2.CascadeClassifier(os.getcwd()+"\\haarcascade\\haarcascade_frontalface_alt.xml")
 
     # 识别出人脸后要画的边框的颜色，RGB格式, color是一个不可增删的数组
     color = (0, 255, 0)
@@ -64,4 +64,5 @@ def CatchPICFromVideo(window_name, camera_idx, catch_pic_num, path_name):
 
 if __name__ == '__main__':
     # 连续截100张图像，存进image文件夹中
-    CatchPICFromVideo("get face", 'kelake.mp4', 99, "E:\\VideoCapture")
+    CatchPICFromVideo("get face", os.getcwd()+"\\video\\kelake.mp4", 99, "E:\\VideoCapture")
+

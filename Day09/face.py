@@ -10,13 +10,13 @@ from datetime import datetime
  使用haar特征的级联分类器haarcascade_frontalface_default.xml，在haarcascades目录下还有其他的训练好的xml文件可供选择。
  注：haarcascades目录下训练好的分类器必须以灰度图作为输入。
  分类器 https://github.com/opencv/opencv/tree/master/data/haarcascades
- 安装模块：pip install Pillow
+ 安装模块：pip install Pillow   pip install opencv-python
 """
 
 
 def detectFaces(image_name):
     img = cv2.imread(image_name)
-    face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+    face_cascade = cv2.CascadeClassifier(os.getcwd()+"\\haarcascade\\haarcascade_frontalface_default.xml")
     if img.ndim == 3:
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     else:
@@ -48,21 +48,21 @@ def saveFaces(image_name):
 # 调用Image模块的draw方法，Image.open获取图像句柄，ImageDraw.Draw获取该图像的draw实例，然后调用该draw实例的rectangle方法画矩形(矩形的坐标即
 # detectFaces返回的坐标)，outline是矩形线条颜色(B,G,R)。
 # 注：原始图像如果是灰度图，则去掉outline，因为灰度图没有RGB可言。drawEyes、detectSmiles也一样。
-def drawFaces(image_name):
-    faces = detectFaces(image_name)
+def drawFaces(path, image_name):
+    faces = detectFaces(path+image_name)
     if faces:
-        img = Image.open(image_name)
+        img = Image.open(path+image_name)
         draw_instance = ImageDraw.Draw(img)
         for (x1, y1, x2, y2) in faces:
             draw_instance.rectangle((x1, y1, x2, y2), outline=(255, 0, 0))
-        img.save('drawfaces_' + image_name)
+        img.save(path+'drawfaces_' + image_name)
 
 
 # 检测眼睛，返回坐标
 # 由于眼睛在人脸上，我们往往是先检测出人脸，再细入地检测眼睛。故detectEyes可在detectFaces基础上来进行，代码中需要注意“相对坐标”。
 # 当然也可以在整张图片上直接使用分类器,这种方法代码跟detectFaces一样，这里不多说。
 def detectEyes(image_name):
-    eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
+    eye_cascade = cv2.CascadeClassifier(os.getcwd()+"\\haarcascade\\haarcascade_eye.xml")
     faces = detectFaces(image_name)
 
     img = cv2.imread(image_name)
@@ -90,7 +90,7 @@ def drawEyes(image_name):
 # 检测笑脸
 def detectSmiles(image_name):
     img = cv2.imread(image_name)
-    smiles_cascade = cv2.CascadeClassifier("haarcascade_smile.xml")
+    smiles_cascade = cv2.CascadeClassifier(os.getcwd()+"\\haarcascade\\haarcascade_smile.xml")
     if img.ndim == 3:
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     else:
@@ -116,7 +116,7 @@ def drawSmiles(image_name):
 
 if __name__ == '__main__':
     time1 = datetime.now()
-    result = detectFaces('people.jpg')
+    result = detectFaces(os.getcwd()+"\\images\\people.jpg")
     time2 = datetime.now()
     print("耗时：" + str(time2 - time1))
     if len(result) > 0:
@@ -124,8 +124,8 @@ if __name__ == '__main__':
     else:
         print('视频图像中无人！！')
 
-    drawFaces('/img/people.jpg')
-    # saveFaces('img/people.jpg')
+    drawFaces(os.getcwd()+"\\images\\", "people.jpg")
+    saveFaces(os.getcwd()+"\\images\\heying.jpg")
     # drawSmiles('img/people.jpg')    # 极其不准确
     # drawEyes('people.jpg')    # 有问题报错
 

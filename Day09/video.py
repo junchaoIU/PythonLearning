@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import cv2
 import sys
 import importlib
@@ -10,7 +11,7 @@ def CatchUsbVideo(window_name, camera_idx):
     # 视频来源，可以来自一段已存好的视频，也可以直接来自USB摄像头
     cap = cv2.VideoCapture(camera_idx)
     # 告诉OpenCV使用人脸识别分类器
-    classfier = cv2.CascadeClassifier("haarcascade_frontalface_alt2.xml")
+    classfier = cv2.CascadeClassifier(os.getcwd()+"\\haarcascade\\haarcascade_frontalface_alt2.xml")
     # 识别出人脸后要画的边框的颜色，RGB格式
     color = (0, 255, 0)
     count = 0
@@ -29,7 +30,7 @@ def CatchUsbVideo(window_name, camera_idx):
 
 
 if __name__ == '__main__':
-    result = CatchUsbVideo("识别人脸区域", 'xiaojiejie.mp4')
+    result = CatchUsbVideo("识别人脸区域", 'kelake.mp4')
     if result > 0:
         print('视频中有人！！')
     else:
