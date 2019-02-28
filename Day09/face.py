@@ -16,7 +16,7 @@ from datetime import datetime
 
 def detectFaces(image_name):
     img = cv2.imread(image_name)
-    face_cascade = cv2.CascadeClassifier(os.getcwd()+"\\haarcascade\\haarcascade_frontalface_default.xml")
+    face_cascade = cv2.CascadeClassifier(os.getcwd()+"\\haarcascade\\haarcascade_frontalface_alt.xml")
     if img.ndim == 3:
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     else:
@@ -116,7 +116,7 @@ def drawSmiles(image_name):
 
 if __name__ == '__main__':
     time1 = datetime.now()
-    result = detectFaces(os.getcwd()+"\\images\\people.jpg")
+    result = detectFaces(os.getcwd()+"\\images\\hanxue.jpg")
     time2 = datetime.now()
     print("耗时：" + str(time2 - time1))
     if len(result) > 0:
@@ -124,8 +124,8 @@ if __name__ == '__main__':
     else:
         print('视频图像中无人！！')
 
-    drawFaces(os.getcwd()+"\\images\\", "people.jpg")
-    saveFaces(os.getcwd()+"\\images\\heying.jpg")
+    drawFaces(os.getcwd()+"\\images\\", "hanxue.jpg")
+    # saveFaces(os.getcwd()+"\\images\\heying.jpg")
     # drawSmiles('img/people.jpg')    # 极其不准确
     # drawEyes('people.jpg')    # 有问题报错
 
