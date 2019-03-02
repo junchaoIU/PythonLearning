@@ -2,7 +2,7 @@
 #!/usr/bin/python
 # 导入requests库
 __author__ = "小柒"
-__blog__ = "https://blog.52itstyle.com/"
+__blog__ = "https://blog.52itstyle.vip/"
 import requests
 # 导入文件操作库
 import os
