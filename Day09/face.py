@@ -116,7 +116,7 @@ def drawSmiles(image_name):
 
 if __name__ == '__main__':
     time1 = datetime.now()
-    result = detectFaces(os.getcwd()+"\\images\\hanxue.jpg")
+    result = detectFaces(os.getcwd()+"\\images\\heying.jpg")
     time2 = datetime.now()
     print("耗时：" + str(time2 - time1))
     if len(result) > 0:
@@ -124,7 +124,7 @@ if __name__ == '__main__':
     else:
         print('视频图像中无人！！')
 
-    drawFaces(os.getcwd()+"\\images\\", "hanxue.jpg")
+    drawFaces(os.getcwd()+"\\images\\", "heying.jpg")
     # saveFaces(os.getcwd()+"\\images\\heying.jpg")
     # drawSmiles('img/people.jpg')    # 极其不准确
     # drawEyes('people.jpg')    # 有问题报错
