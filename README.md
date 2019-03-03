@@ -108,6 +108,14 @@ OpenCV识别答题卡: https://gitee.com/52itstyle/Python/blob/master/Day12/
 
 我爬了《流浪地球》十万个短评得出以下结论: https://gitee.com/52itstyle/Python/blob/master/Day14/
 
+### Day15
+
+上传图片二维码并解析: https://gitee.com/52itstyle/Python/blob/master/Day15/
+
+### Day16
+
+文字转音频播报: https://gitee.com/52itstyle/Python/blob/master/Day16/
+
 ## 欢迎关注
 
 一个有温度的微信公众号，期待与你共同进步，分享美文，分享各种Java学习资源
