@@ -32,7 +32,7 @@ def win_say():
     speaker.Speak("你好，小姐姐，能加个微信吗？")
 
 
-def txt():
+def txt_say():
     f = open("52itstyle.txt", encoding='UTF-8')
     line = f.readline()
     engine = pyttsx3.init()
@@ -46,7 +46,8 @@ def txt():
 
 if __name__ == '__main__':
     win_say()
-    # txt()
+    say()
+    txt_say()
 
 
 
