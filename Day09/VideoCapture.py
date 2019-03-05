@@ -64,5 +64,5 @@ def CatchPICFromVideo(window_name, camera_idx, catch_pic_num, path_name):
 
 if __name__ == '__main__':
     # 连续截100张图像，存进image文件夹中
-    CatchPICFromVideo("get face", os.getcwd()+"\\video\\kelake.mp4", 99, "E:\\VideoCapture")
+    CatchPICFromVideo("get face", os.getcwd()+"\\video\\kelake.mp4", 1000, "E:\\VideoCapture")
 

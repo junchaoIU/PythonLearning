@@ -30,7 +30,7 @@ def CatchUsbVideo(window_name, camera_idx):
 
 
 if __name__ == '__main__':
-    result = CatchUsbVideo("识别人脸区域", 'kelake.mp4')
+    result = CatchUsbVideo("识别人脸区域", os.getcwd()+'\\video\\xiaojiejie.mp4')
     if result > 0:
         print('视频中有人！！')
     else:
