@@ -3,6 +3,9 @@ __author__ = "小柒"
 __blog__ = "https://blog.52itstyle.vip/"
 import pyttsx3
 import win32com.client
+from aip import AipSpeech
+from play import wm_player
+
 """
 pip3 install pypiwin32
 pip3 install pyttsx3
@@ -44,10 +47,32 @@ def txt_say():
     f.close()
 
 
-if __name__ == '__main__':
-    win_say()
-    say()
-    txt_say()
+""" 你的百度 APPID AK SK
+https://console.bce.baidu.com/ai/#/ai/speech/app/list       应用列表
+http://ai.baidu.com/docs#/TTS-Online-Python-SDK/top         API
+"""
 
+
+def du_say():
+    app_id = '***'
+    api_key = '*******'
+    secret_key = '***********'
+    client = AipSpeech(app_id, api_key, secret_key)
+    text = "生当作人杰，死亦为鬼雄。至今思项羽，不肯过江东。"
+    result = client.synthesis(text, 'zh', 1, {
+        'vol': 5,
+    })
+    # 识别正确返回语音二进制 错误则返回dict 参照下面错误码
+    if not isinstance(result, dict):
+        with open('auido.mp3', 'wb') as f:
+            f.write(result)
+    wm_player('auido.mp3')
+
+
+if __name__ == '__main__':
+    # win_say()
+    # say()
+    # txt_say()
+    du_say()
 
 

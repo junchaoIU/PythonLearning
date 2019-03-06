@@ -12,8 +12,8 @@ https://www.pygame.org/contribute.html
 """
 
 
-def wm_player():
-    os.system("649551350.mp3")
+def wm_player(mp3):
+    os.system(mp3)
     time.sleep(10)
     os.system("taskkill /F /IM wmplayer.exe")
 
@@ -29,5 +29,5 @@ def py_game_player():
 
 
 if __name__ == '__main__':
-    py_game_player()
+    py_game_player("649551350.mp3")
 
