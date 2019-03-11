@@ -2,6 +2,8 @@
 
 交流群：722652515
 
+在线百度语音播报：https://gitee.com/52itstyle，演示地址：https://speech.52itstyle.vip
+
 ## 项目介绍
 
 从零学Python，各种开发案例，不定期更新。
