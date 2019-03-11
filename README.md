@@ -2,7 +2,9 @@
 
 交流群：722652515
 
-在线百度语音播报：https://gitee.com/52itstyle，演示地址：https://speech.52itstyle.vip
+在线百度语音播报：https://gitee.com/52itstyle/baidu-speech
+
+演示地址：https://speech.52itstyle.vip
 
 ## 项目介绍
 
