@@ -6,6 +6,9 @@
 
 演示地址：https://speech.52itstyle.vip
 
+Anysdk/QuickSdk 同类打包工具: https://github.com/huangjian888/XSdkTools 
+
+
 ## 项目介绍
 
 从零学Python，各种开发案例，不定期更新。
