@@ -121,6 +121,14 @@ OpenCV识别答题卡: https://gitee.com/52itstyle/Python/blob/master/Day12/
 
 文字转音频播报: https://gitee.com/52itstyle/Python/blob/master/Day16/
 
+### Day17
+
+微信小黄鸡: https://gitee.com/52itstyle/Python/blob/master/Day17/
+
+### Day18
+
+Activiti 工作流 BPMN 作图工具: https://gitee.com/52itstyle/Python/blob/master/Day18/
+
 ## 欢迎关注
 
 一个有温度的微信公众号，期待与你共同进步，分享美文，分享各种Java学习资源
