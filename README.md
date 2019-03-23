@@ -6,6 +6,10 @@
 
 演示地址：https://speech.52itstyle.vip
 
+Activiti 工作流 BPMN 在线作图项目：https://gitee.com/52itstyle/BPMN
+
+演示地址：https://bpmn.52itstyle.vip
+
 
 ## 项目介绍
 
