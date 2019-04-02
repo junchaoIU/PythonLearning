@@ -127,11 +127,20 @@ OpenCV识别答题卡: https://gitee.com/52itstyle/Python/blob/master/Day12/
 
 ### Day17
 
-微信小黄鸡: https://gitee.com/52itstyle/Python/blob/master/Day17/
+在线百度语音: https://gitee.com/52itstyle/Python/blob/master/Day17/
 
 ### Day18
 
-Activiti 工作流 BPMN 作图工具: https://gitee.com/52itstyle/Python/blob/master/Day18/
+微信小黄鸡: https://gitee.com/52itstyle/Python/blob/master/Day18/
+
+### Day19
+
+Activiti 工作流 BPMN 作图工具: https://gitee.com/52itstyle/Python/blob/master/Day19/
+
+
+### Day20
+
+李沧二手房: https://gitee.com/52itstyle/Python/blob/master/Day20/
 
 ## 欢迎关注
 
