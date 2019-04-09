@@ -142,6 +142,10 @@ Activiti 工作流 BPMN 作图工具: https://gitee.com/52itstyle/Python/blob/ma
 
 李沧二手房: https://gitee.com/52itstyle/Python/blob/master/Day20/
 
+### Day21
+
+车牌号识别: https://gitee.com/52itstyle/Python/blob/master/Day21/
+
 ## 欢迎关注
 
 一个有温度的微信公众号，期待与你共同进步，分享美文，分享各种Java学习资源
