@@ -54,9 +54,9 @@ http://ai.baidu.com/docs#/TTS-Online-Python-SDK/top         API
 
 
 def du_say():
-    app_id = '***'
-    api_key = '*******'
-    secret_key = '***********'
+    app_id = '208522'
+    api_key = 'sYi4GIqdPrzC4K80IFvA29pD'
+    secret_key = 'rhF5SHsEuUAz3cs3TgTpj4jllTn11gFG'
     client = AipSpeech(app_id, api_key, secret_key)
     text = "生当作人杰，死亦为鬼雄。至今思项羽，不肯过江东。"
     result = client.synthesis(text, 'zh', 1, {
