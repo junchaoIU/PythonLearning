@@ -10,6 +10,12 @@ Activiti 工作流 BPMN 在线作图项目：https://gitee.com/52itstyle/BPMN
 
 演示地址：https://bpmn.52itstyle.vip
 
+一款爬虫博客：
+
+https://blog.52itstyle.top/   
+
+https://blog.52itstyle.top/index
+
 
 ## 项目介绍
 
