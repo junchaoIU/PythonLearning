@@ -34,28 +34,31 @@ mysql = MyPymysqlPool("dbMysql")
 def reptile():
     page = 2
     for n in range(1, page):
-        url = "https://www.cnblogs.com/smallSevens/default.html?page=" + str(n)
+        url = "https://www.cnblogs.com/yjmyzz/default.html?page=" + str(n)
         headers = {'User-Agent': random.choice(blog_headers)}
         res = requests.get(url, headers=headers)
         soup = BeautifulSoup(res.text, 'html.parser')
-        count = soup.find_all('h2', class_='postTitle')
+        count = soup.find_all(class_='postTitle')
         for c in count:
-            # 获取博客地址
-            href = c.find('a').attrs['href']
-            headers = {'User-Agent': random.choice(blog_headers)}
-            res = requests.get(href, headers=headers)
-            soup = BeautifulSoup(res.text, 'html.parser')
-            # 获取博客内容
-            content = soup.find('div', class_='blogpost-body')
-            # 去掉博客外层的DIV
-            content = content.decode_contents(formatter="html")
-            # 获取博客标题
-            title = soup.find('a', id='cb_post_title_url').text
-            # 博客HTML转MD
-            content = tomd.Tomd(content).markdown
-            # 博客写入数据库
-            write_db(title, content, href)
-            print("已插入:{}".format(href))
+            try:
+                # 获取博客地址
+                href = c.find('a').attrs['href']
+                headers = {'User-Agent': random.choice(blog_headers)}
+                res = requests.get(href, headers=headers)
+                soup = BeautifulSoup(res.text, 'html.parser')
+                # 获取博客内容
+                content = soup.find('div', class_='blogpost-body')
+                # 去掉博客外层的DIV
+                content = content.decode_contents(formatter="html")
+                # 获取博客标题
+                title = soup.find('a', id='cb_post_title_url').text
+                # 博客HTML转MD
+                content = tomd.Tomd(content).markdown
+                # 博客写入数据库
+                write_db(title, content, href)
+                print("已插入:{}".format(href))
+            except Exception as e:
+                print(e)
 
 
 # 写入数据库
