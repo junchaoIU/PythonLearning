@@ -1,11 +1,19 @@
 # 常用模块说明
+
 os 操作系统模块，文件路径操作等
+
 sys 程序系统本身模块，获取参数，导入的模块，输入输出等
+
 time timestamp时间戳，struct_time时间元组，format time 格式化时间模块 
+
 datetime模块 datatime模块重新封装了time模块，提供更多接口
+
 hashlib加密 hashlib主要提供字符加密功能，将md5和sha模块整合到了一起，支持md5,sha1, sha224, sha256, sha384, sha512等算法
+
 logging模块简介 logging模块是Python内置的标准模块，可以设置级别
+
 subprocess模块 subprocess是Python 2.4中新增的一个模块，它允许你生成新的进程
+
 # 总结
 那么我们到底该用哪个模块、哪个函数来执行命令与系统及系统进行交互呢？下面我们来做个总结：
 
