@@ -111,7 +111,7 @@ def getHtml(blog):
 
 
 if __name__ == "__main__":
-    blog = "https://www.cnblogs.com/smallSevens/p/11223830.html"
+    blog = "https://www.cnblogs.com/crossoverJie/p/11318984.html"
     run(blog)
 
 
