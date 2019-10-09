@@ -168,6 +168,10 @@ Selenium学习笔记: https://gitee.com/52itstyle/Python/blob/master/Day24/
 
 爬取博客文章并入库: https://gitee.com/52itstyle/Python/blob/master/Day25/
 
+### Day27
+
+生成微信头像全家福: https://gitee.com/52itstyle/Python/blob/master/Day27/
+
 ## 欢迎关注
 
 一个有温度的微信公众号，期待与你共同进步，分享美文，分享各种Java学习资源
