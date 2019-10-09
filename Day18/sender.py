@@ -1,7 +1,7 @@
 # coding: utf-8
 from __future__ import unicode_literals
 import requests
-import urllib2
+import urllib3
 import json
 from threading import Timer
 from wxpy import *
@@ -11,7 +11,7 @@ bot = Bot('bot.pkl')
 
 def xiaohuangji(content):
     url = r'http://www.tuling123.com/openapi/api?key=77aa5b955fcab122b096f2c2dd8434c8&info='+content  #请求的网址
-    reson = urllib2.urlopen(url)
+    reson = urllib3.urlopen(url)
     reson = json.loads(reson.read())
     return reson['text'].encode('utf-8')
 
