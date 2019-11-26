@@ -2,6 +2,8 @@
 
 交流群：722652515
 
+这可能是世界上最好的 **图床** ：https://www.cloudbed.vip
+
 在线百度语音播报：https://gitee.com/52itstyle/baidu-speech
 
 演示地址：https://speech.52itstyle.vip
