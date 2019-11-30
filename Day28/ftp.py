@@ -25,6 +25,7 @@ python -m pyftpdlib -i 127.0.0.1 -w -d /file/ -u user -P 123456
 if __name__ == '__main__':
     authorizer = DummyAuthorizer()
     '''
+        权限说明：
         Read permissions:
          - "e" = change directory (CWD command)
          - "l" = list files (LIST, NLST, STAT, MLSD, MLST, SIZE, MDTM commands)
@@ -39,10 +40,13 @@ if __name__ == '__main__':
          - "M" = change file mode (SITE CHMOD command)
          - "T" = update file last modified time (MFMT command)
     '''
-    authorizer.add_user('admin', 'admin', 'E:\\file', perm='elradfmwM')
+    '''
+     这里我们创建一个管理员，拥有所有权限，创建一个普通用户，只拥有浏览权限
+    '''
+    authorizer.add_user('admin', 'admin', 'F:\\file', perm='elradfmwM')
+    authorizer.add_user('user', 'user', 'F:\\file')
     handler = FTPHandler
     handler.authorizer = authorizer
-
     server = FTPServer(('0.0.0.0', 8888), handler)
     server.serve_forever()
 
