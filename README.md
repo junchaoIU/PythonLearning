@@ -2,6 +2,10 @@
 
 交流群：722652515
 
+这可能是东半球最好的妹子图小程序，点她、点她、点她！！！
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0224/192652_8e043ef1_87650.jpeg "meizi.jpg")
+
 这可能是世界上最好的 **图床** ：https://www.cloudbed.vip
 
 在线百度语音播报：https://gitee.com/52itstyle/baidu-speech
