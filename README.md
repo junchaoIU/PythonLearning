@@ -200,6 +200,4 @@ http://www.jetbrains.com/pycharm/
 http://www.runoob.com/python3/python3-tutorial.html
 
 
-## 云服务推荐
-
-[![输入图片说明](https://images.gitee.com/uploads/images/2019/0718/130816_45e06f95_87650.png "屏幕截图.png")](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=kutpfdo3)
+ **墙裂推荐，一个能够让程序猿快速开发的极简工具箱：https://gitee.com/52itstyle/spring-boot-tools** 
