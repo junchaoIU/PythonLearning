@@ -4,7 +4,7 @@
 
 这可能是东半球最好的妹子图小程序，点她、点她、点她！！！
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0224/192652_8e043ef1_87650.jpeg "meizi.jpg")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0601/215055_45a9fd8f_87650.png "可以关注公众号的二维码.png")
 
 这可能是世界上最好的 **图床** ：https://www.cloudbed.vip
 
