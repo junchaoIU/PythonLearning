@@ -178,6 +178,12 @@ Selenium学习笔记: https://gitee.com/52itstyle/Python/blob/master/Day24/
 
 生成微信头像全家福: https://gitee.com/52itstyle/Python/blob/master/Day27/
 
+### 机器学习
+
+[多层感知机](https://gitee.com/52itstyle/Python/tree/master/Tensorflow/%E5%A4%9A%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA)
+
+
+
 ## 欢迎关注
 
 一个有温度的微信公众号，期待与你共同进步，分享美文，分享各种Java学习资源
