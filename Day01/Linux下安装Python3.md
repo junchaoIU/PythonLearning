@@ -8,6 +8,7 @@ Linux下大部分系统默认自带python2.x的版本，最常见的是python2.6
 ```
 # 下载最新版本
 wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz
+apt-get install python
 ```
 
 事先安装依赖，否则后期安装会报错：
