@@ -34,7 +34,7 @@ meizi_headers = [
 global headers
 headers = {'User-Agent': random.choice(meizi_headers)}
 # 爬图地址
-mziTu = 'http://www.mzitu.com/'
+mziTu = 'https://www.mzitu.com/'
 # 定义存储位置
 global save_path
 save_path = 'F:\BeautifulPictures'
